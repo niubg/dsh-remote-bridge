@@ -1,0 +1,27 @@
+{
+  "format": 1,
+  "title": { "en": "Custom plugins", "zh": "自定义插件" },
+  "description": { "en": "Personal plugin market for DeepSeek Harness.", "zh": "DeepSeek Harness 个人插件市场。" },
+  "plugins": [
+    {
+      "name": "dsh-remote-bridge",
+      "title": { "en": "Remote bridge", "zh": "远程桥" },
+      "description": {
+        "en": "Control your desktop Harness from your phone: fixed-port forwarder, QR pairing, one-command Tailscale setup, and agent tools for guided configuration.",
+        "zh": "在手机上远程控制桌面 Harness：固定端口转发、扫码配对、一条命令完成 Tailscale 配置，并内置 Agent 引导工具。"
+      },
+      "icon": "icons/remote-bridge.svg",
+      "author": "niubinggang",
+      "repository": { "url": "https://github.com/niubg/dsh-remote-bridge" },
+      "homepage": "https://github.com/niubg/dsh-remote-bridge#readme",
+      "versions": [
+        {
+          "version": "1.4.2",
+          "publishTimestamp": 1795185193,
+          "source": { "type": "git", "url": "https://github.com/niubg/dsh-remote-bridge.git", "commit": "6c1d7fcdf303ba6f45801fb1ed9c23df49f48def" },
+          "engines": { "dsh": ">=0.2.2-rc.2" }
+        }
+      ]
+    }
+  ]
+}
