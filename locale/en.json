@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Remote bridge",
+    "description": "Fixed-port TCP forwarder to the desktop webserver plus a loopback-only pairing page that mints the tokenized mobile URL.",
+    "detail": "docs/DETAIL.md"
+  }
+}

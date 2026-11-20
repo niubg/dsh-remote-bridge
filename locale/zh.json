@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "远程桥",
+    "description": "把固定端口转发到桌面 webserver，并在仅本机可开的配对页里生成手机登录地址。",
+    "detail": "docs/DETAIL.md"
+  }
+}

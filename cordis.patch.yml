@@ -1,0 +1,7 @@
+# 远程桥：把固定端口转发到 Desktop webserver，并提供仅本机可开的配对页。
+- insert:
+    - id: remote-bridge
+      name: '@local/remote-bridge'
+      config:
+        enabled: true
+        listenPort: 46084
