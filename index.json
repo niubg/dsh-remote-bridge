@@ -18,7 +18,7 @@
         {
           "version": "1.5.0",
           "publishTimestamp": 1795244324,
-          "source": { "type": "git", "url": "https://github.com/niubg/dsh-remote-bridge.git", "commit": "" },
+          "source": { "type": "git", "url": "https://github.com/niubg/dsh-remote-bridge.git", "commit": "75aa30b1349b76e9f57028e36ff4f1771a2dafd8" },
           "engines": { "dsh": ">=0.2.2-rc.2" }
         }
       ]
