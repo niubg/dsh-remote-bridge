@@ -275,6 +275,12 @@ export async function runStep(step, cfg, listen) {
     if (out.code !== 0) {
       return say([`✗ Funnel 操作失败: ${out.stderr.slice(-200)}`])
     }
+    // ⚠️ 自愈关键：funnel 与 serve 共用 443 槽位，funnel off 会连带清空 serve
+    // 配置（曾导致手机端"网页加载失败"）。关闭 funnel 后立即恢复 serve，
+    // 保证组网内直连路径永远在线。
+    if (!on) {
+      await run(`"${bin}" --socket="${SOCK}" serve --bg 127.0.0.1:${cfg.listenPort}`, 60000)
+    }
     // tailscaled 状态传播有延迟：轮询直到 funnel status 反映真实结果（最多 ~8s），
     // 避免向导页刷新时读到旧状态、按钮/徽标翻转滞后。
     let nowOn = null

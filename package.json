@@ -1,7 +1,7 @@
 {
   "name": "dsh-remote-bridge",
   "description": "Phone-to-desktop remote bridge for DeepSeek Harness: fixed-port TCP forwarder to the desktop webserver, QR pairing page, and one-command Tailscale setup (serve/funnel). Agent tools included.",
-  "version": "1.4.2",
+  "version": "1.4.3",
   "author": "niubinggang",
   "license": "MIT",
   "type": "module",
